@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{ 
+   char a[10],ad[10],label[10],opcode[10],operand[10],symbol[10];
+int start,diff,address,add,len,actual_len,finadder,prevadder,j=0;
+char mnemonic [15][15]={"LDA","STA","LDCH","STCH");
+char code[15][15]={"33","44","55","57",);
+FILE *fp1,*fp2,*fp3,*fp4;
+fp1=fopen("output.txt","w");
+fp2=fopen("symtab.txt","r");
+fp3=fopen("intermediate.txt","r");
+fp4=fopen("objcode.txt","w");
+fscanf(fp3,"%s\t%s\t%s",label,opcode,operand);
+while (strcmp(opcode,"END")!=0){
+prevaddr=address;
+fscanf(fp3,"%d%s%s%s",&address,label,opcode,operand);
+}
+finaddr=address;
+fclose(fp3);
+fp3=fopen("intermediate.txt","r");
+fscanf(fp3,"\t%s\t%s\t%s\n",label,opcode,operand);
+if(strcmp(opcode,"
